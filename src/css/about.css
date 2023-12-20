@@ -1,0 +1,125 @@
+/*================ Mobile Styles =============== */
+.About_us_container {
+  width: 335px;
+  height: 775px;
+  display: flex;
+  padding: 40px 10px 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  border-radius: 24px;
+  background: #fbfbfb;
+}
+.About_us_title {
+  width: 295px;
+  color: #1b414b;
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.About_us_text1 {
+  width: 295px;
+  height: 72px;
+  color: #1b414b;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.About_us_text2 {
+  width: 295px;
+  height: 84px;
+  color: #040306;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  opacity: 0.4;
+}
+.About_us_paragraf {
+  display: flex;
+  width: 295px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+/* .About_us_img {
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: lightgray -181.984px -4.244px / 182.464% 109.429% no-repeat;
+} */
+/*================ /Mobile Styles =============== */
+/*================ Tablet Styles =============== */
+@media screen and (min-width: 768px) {
+  .About_us_container {
+    width: 703px;
+    height: 952px;
+    display: flex;
+    padding: 50px 0px 0px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+  .About_us_title {
+    width: 536px;
+    height: 144px;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .About_us_paragraf {
+    display: flex;
+    width: 389px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .About_us_text1 {
+    font-size: 23px;
+    width: 389px;
+    height: 92px;
+  }
+  .About_us_text2 {
+    width: 385px;
+    height: 75px;
+    font-size: 13px;
+    line-height: 1.15;
+  }
+}
+/*================ /Tablet Styles =============== */
+
+/*================ Desctop Styles =============== */
+@media screen and (min-width: 1280px) {
+  .About_us_container {
+    display: inline-flex;
+    width: 1180px;
+    height: 832px;
+    padding: 50px 50px 0px 50px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 189px;
+    flex-shrink: 0;
+  }
+  .About_us_title {
+    display: flex;
+    width: 537px;
+    height: 144px;
+  }
+  .About_us_text1 {
+    width: 354px;
+    height: 115px;
+  }
+  .About_us_text2 {
+    width: 354px;
+    height: 75px;
+  }
+}
+/*================/ Desctop Styles =============== */
