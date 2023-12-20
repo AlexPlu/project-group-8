@@ -1,11 +1,27 @@
 /* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+
+body,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul[class],
+ol[class],
+li {
   margin: 0;
 }
 
@@ -13,10 +29,11 @@ p:last-child {
   margin-bottom: 0;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 a {
@@ -26,6 +43,13 @@ a {
 
 button {
   cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
 img {
