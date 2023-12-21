@@ -104,6 +104,10 @@
     fill: #FBFBFB;
 }
 
+.menu-social-icon:hover, .menu-social-icon:focus {
+    fill: rgba(251, 251, 251, 0.8);
+}
+
 @media screen and (min-width: 768px) {
     .menu-container {
         display: none;
