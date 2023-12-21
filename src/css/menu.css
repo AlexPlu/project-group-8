@@ -103,3 +103,9 @@
 .menu-social-icon {
     fill: #FBFBFB;
 }
+
+@media screen and (min-width: 768px) {
+    .menu-container {
+        display: none;
+    }
+}
