@@ -75,11 +75,7 @@
 /* Advantages Tablet */
 
 @media screen and (min-width:768px) {
-    .container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
-
+    
     .advantages {
         padding-top: 150px;
         padding-bottom: 150px;
@@ -115,9 +111,8 @@
 /* Advantages Desktop */
 
 @media screen and (min-width:1280px) {
-    .container {
+    .container-desktop {
         max-width: 1280px;
-        margin: 0 auto;
         padding-left: 50px;
         padding-right: 28px;
     }
