@@ -135,6 +135,7 @@
 
 .rent-img {
     border-radius: 24px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -145,10 +146,6 @@
     }
 
 }
-
-
-
-
 
 /* Rent mobile */
 /* Rent tablet */
@@ -246,6 +243,7 @@
 
     .rent-wrapper-img {
         max-width: 658px;
+        margin: 0 auto;
     }
 
 
