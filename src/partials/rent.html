@@ -1,0 +1,81 @@
+<section class="rent-section">
+  <div class="rent-wrapper-desctop-container">
+    <div class="rent-container">
+      <div class="rent-title-form-img">
+        <h2 class="rent-title">Rent a yacht now</h2>
+      </div>
+      <div class="rent-container-form">
+        <form class="rent-form" action="">
+          <label class="rent-label" for="user-name"
+            ><input
+              class="rent-input"
+              name="user-name"
+              type="text"
+              id="user-name"
+              placeholder="Full Name"
+          /></label>
+          <label class="rent-label" for="user-email"
+            ><input
+              class="rent-input"
+              name="user-email"
+              type="email"
+              id="user-email"
+              placeholder="Email"
+          /></label>
+          <label class="rent-label" for="user-tel"
+            ><input
+              class="rent-input"
+              name="user-tel"
+              type="tel"
+              id="user-tel"
+              placeholder="Phone number"
+          /></label>
+          <textarea
+            class="rent-comment"
+            name="user-comment"
+            id="user-comment"
+            cols="30"
+            rows="10"
+            placeholder="Comment"
+          ></textarea>
+        </form>
+      </div>
+      <div class="rent-btn-container">
+        <button class="rent-form-btn" type="submit">Send</button>
+      </div>
+    </div>
+    <div class="rent-wrapper-img">
+      <div class="rent-img-container">
+        <picture>
+          <source
+            srcset="./img/rent/rent-mobile@2x.jpg 2x"
+            media="(max-width: 767px)"
+            width="335"
+            height="412"
+          />
+          <source
+            srcset="
+              ./img/rent/rent-tablet.jpg    1x,
+              ./img/rent/rent-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/rent/rent-desktop.jpg    1x,
+              ./img/rent/rent-desktop@2x.jpg 2x
+            "
+            width="658"
+            height="534"
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="rent-img"
+            src="./img/rent/rent-mobile.jpg"
+            alt="yacht picture"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
