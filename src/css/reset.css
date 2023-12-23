@@ -34,6 +34,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: #0e1823;
 }
 
 a {

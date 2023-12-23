@@ -1,21 +1,18 @@
 /*================ Mobile Styles =============== */
-.about-us-section {
-  display: flex;
-  background: #0e1823;
-  padding: 20px 20px 20px;
-  justify-content: center;
-}
 .about-us-container {
   max-width: 335px;
   height: 775px;
   display: flex;
-  background-color: #fbfbfb;
-  background: linear-gradient(180deg, #fbfbfb 80%, #0e1823 20%);
+  background: #fbfbfb;
   flex-direction: column;
   gap: 40px;
   border-radius: 24px;
-  padding: 0px 0px 0px 0px;
+  padding: 0px;
+  z-index: 2;
+  position: relative;
+  top: -100px;
   justify-content: space-between;
+  overflow: hidden;
 }
 .about-us-top-wrapper {
   display: flex;
@@ -62,23 +59,26 @@
   object-fit: cover;
   object-position: center;
 }
+
 .about-us-image-wrapper {
   position: relative;
   overflow: hidden;
   border-radius: 24px;
 }
 
-/*================ /Mobile Styles =============== */
-/*================ Tablet Styles =============== */
 @media screen and (min-width: 768px) {
   .about-us-container {
     max-width: 768px;
     height: 952px;
     display: flex;
-    /* padding: 50px 136px 0px 32px; */
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
+  }
+
+  .about-us-top-wrapper {
+    padding-top: 50px;
+    padding-left: 32px;
   }
 
   .about-us-title {
@@ -110,27 +110,20 @@
     height: 470px;
   }
 }
-/*================ /Tablet Styles =============== */
 
-/*================ Desctop Styles =============== */
 @media screen and (min-width: 1280px) {
   .about-us-container {
     display: flex;
-    flex-wrap: nowrap;
     max-width: 1280px;
     height: 834px;
-    padding: 0px 0px 0px 0px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-shrink: 0;
+    top: -80px;
   }
   .about-us-top-wrapper {
     display: flex;
-    /* flex-wrap: nowrap; */
     justify-content: space-between;
     flex-direction: row;
     gap: 189px;
-    padding: 0px 0px 0px 50px;
+    padding: 50px;
   }
   .about-us-title {
     display: flex;
@@ -157,4 +150,3 @@
     flex-wrap: nowrap;
   }
 }
-/*================/ Desctop Styles =============== */

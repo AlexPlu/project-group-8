@@ -1,15 +1,3 @@
-.reviews-container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.reviews {
-  background-color: #0e1823;
-  padding: 80px 0;
-}
 .reviews-list-tablet {
   display: none;
 }
@@ -60,7 +48,7 @@
 }
 
 .review-menu-name {
-  width: 303px;
+  max-width: 303px;
 }
 
 .reviews-item-title {
@@ -82,15 +70,7 @@
   letter-spacing: -0.02em;
 }
 
-/* Tablet */
 @media (min-width: 768px) {
-  .reviews-container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 0;
-  }
-
   .reviews {
     padding: 150px 0;
   }
@@ -150,14 +130,7 @@
   }
 }
 
-/* Desktop */
 @media (min-width: 1280px) {
-  .reviews-container {
-    max-width: 1280px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
   .reviews-title {
     width: 854px;
   }
