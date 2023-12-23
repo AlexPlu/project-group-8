@@ -1,10 +1,4 @@
 /*================ Mobile Styles =============== */
-.about-us-section {
-  display: flex;
-  background: #0e1823;
-  padding: 20px 20px 20px;
-  justify-content: center;
-}
 .about-us-container {
   max-width: 335px;
   height: 775px;

@@ -66,12 +66,6 @@ address {
   overflow: hidden;
 }
 
-.container {
-  max-width: 355px;
-  padding: 0 0px;
-  margin: 0 auto;
-}
-
 .footer {
   background: #0e1823;
 }
@@ -186,11 +180,6 @@ address {
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
-  .container {
-    max-width: 320px;
-    flex-direction: row;
-  }
-
   .footer-logo {
     display: flex;
     margin: 0 auto;
@@ -203,11 +192,6 @@ address {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 736px;
-    flex-direction: row;
-  }
-
   .footer-wraper {
     padding-left: 48px;
     padding-right: 48px;
@@ -264,10 +248,6 @@ address {
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1230px;
-  }
-
   .footer-logo-text {
     margin-right: 326px;
   }
@@ -280,10 +260,6 @@ address {
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1390px;
-  }
-
   .footer-logo-text {
     margin-right: 409px;
   }
