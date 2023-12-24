@@ -1,73 +1,18 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+.footer-container {
+  max-width: 375px;
+  padding: 20px 10px 0px 10px;
+  margin: 0 auto;
 
-body {
-  font-family: 'Inter', sans-serif;
-}
+  @media (min-width: 768px) {
+    max-width: 768px;
+    padding: 32px 16px 0px 16px;
+  }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: currentColor;
-  outline: 0px solid transparent;
-}
-
-img {
-  display: block;
-}
-
-button {
-  cursor: pointer;
-  outline: 0px solid transparent;
-}
-
-.list {
-  list-style-type: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
-address {
-  font-style: normal;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.footer {
-  background: #0e1823;
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .footer-wraper {
@@ -256,17 +201,5 @@ address {
     max-width: 693px;
     margin-left: 269px;
     margin-right: 268px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .footer-logo-text {
-    margin-right: 409px;
-  }
-
-  .footer-text {
-    max-width: 699px;
-    margin-left: 345px;
-    margin-right: 346px;
   }
 }
