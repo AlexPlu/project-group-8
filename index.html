@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-group-8/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-group-8/assets/index-6e072718.css">
+    <link rel="stylesheet" href="/project-group-8/assets/index-2fbd338f.css">
   </head>
   <body>
     <div class="header-hero-wrapper">
@@ -86,7 +86,12 @@
         </ul>
       </div>
     </nav>
-    <button class="mobile-menu-btn" type="button">
+    <button
+      class="mobile-menu-btn"
+      aria-expanded="false"
+      type="button"
+      onclick="openMenu()"
+    >
       <svg
         class="mobile-menu-btf-icon"
         width="28"
@@ -556,7 +561,7 @@
             target="_blank"
             rel="noopener noreferrer"
             ><svg class="footer-social-item-logo" width="24" height="24">
-              <use href="/project-group-8/assets/icons-15124274.svg#icon-social-instagram"></use></svg
+              <use href="/project-group-8/assets/icons-15124274.svg#instagram"></use></svg
           ></a>
         </li>
         <li class="footer-social-item">
@@ -567,7 +572,7 @@
             rel="noopener noreferrer"
           >
             <svg class="footer-social-item-logo" width="24" height="24">
-              <use href="/project-group-8/assets/icons-15124274.svg#icon-social-youtube"></use></svg
+              <use href="/project-group-8/assets/icons-15124274.svg#youtube"></use></svg
           ></a>
         </li>
         <li class="footer-social-item">
@@ -577,7 +582,7 @@
             target="_blank"
             rel="noopener noreferrer"
             ><svg class="footer-social-item-logo" width="24" height="24">
-              <use href="/project-group-8/assets/icons-15124274.svg#icon-social-facebook"></use></svg
+              <use href="/project-group-8/assets/icons-15124274.svg#facebook"></use></svg
           ></a>
         </li>
       </ul>
@@ -597,10 +602,10 @@
 
     <!-- MOBILE MENU HTML-->
 
-<div class="menu-container">
+<div class="menu-container" id="mobile-menu">
   <div class="menu-header">
     <p class="menu-logo">yachtjet</p>
-    <button class="menu-button" type="button">
+    <button class="menu-button" type="button" onclick="closeMenu()">
       <svg class="menu-button-icon" width="16" height="16" viewBox="0 0 16 16">
         <use href="/project-group-8/assets/icons-15124274.svg#close"></use>
       </svg>
