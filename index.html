@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project-group-8/assets/icons-15124274.svg#favicon" />
+    <link rel="icon" type="image/svg+xml" href="/project-group-8/assets/icons-812d13d6.svg#favicon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YachtJet</title>
     <link
@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-group-8/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-group-8/assets/index-2fbd338f.css">
+    <link rel="stylesheet" href="/project-group-8/assets/index-63f0e3e4.css">
   </head>
   <body>
     <div class="header-hero-wrapper">
@@ -29,9 +29,15 @@
     <nav class="page-header-cont">
       <a class="logo" href="project.html">yachtjet</a>
       <ul class="menu">
-        <li class="menu-nav"><button class="button">About</button></li>
-        <li class="menu-nav"><button class="button">Yachts</button></li>
-        <li class="menu-nav"><button class="button">Reviews</button></li>
+        <li class="menu-nav">
+          <button class="button"><a href="#about">About</a></button>
+        </li>
+        <li class="menu-nav">
+          <button class="button"><a href="#yachts">Yachts</a></button>
+        </li>
+        <li class="menu-nav">
+          <button class="button"><a href="#reviews">Reviews</a></button>
+        </li>
       </ul>
       <div class="block-social-icon">
         <ul class="group-social-icons">
@@ -47,7 +53,7 @@
                 height="24"
                 aria-label="instagram"
               >
-                <use href="/project-group-8/assets/icons-15124274.svg#instagram"></use>
+                <use href="/project-group-8/assets/icons-812d13d6.svg#instagram"></use>
               </svg>
             </a>
           </li>
@@ -63,7 +69,7 @@
                 height="24"
                 aria-label="youtub"
               >
-                <use href="/project-group-8/assets/icons-15124274.svg#youtube"></use>
+                <use href="/project-group-8/assets/icons-812d13d6.svg#youtube"></use>
               </svg>
             </a>
           </li>
@@ -79,26 +85,21 @@
                 height="24"
                 aria-label="facebook"
               >
-                <use href="/project-group-8/assets/icons-15124274.svg#facebook"></use>
+                <use href="/project-group-8/assets/icons-812d13d6.svg#facebook"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
     </nav>
-    <button
-      class="mobile-menu-btn"
-      aria-expanded="false"
-      type="button"
-      onclick="openMenu()"
-    >
+    <button class="mobile-menu-btn" aria-expanded="false" type="button">
       <svg
         class="mobile-menu-btf-icon"
         width="28"
         height="28"
         aria-label="mobile-meny-icon-open"
       >
-        <use href="/project-group-8/assets/icons-15124274.svg#icon-menu-duo"></use>
+        <use href="/project-group-8/assets/icons-812d13d6.svg#icon-menu-duo"></use>
       </svg>
     </button>
   </div>
@@ -116,13 +117,13 @@
     </p>
   </div>
   <button class="button-style" type="button">
-    <a class="yacht-rental-link link" href="./rent.html">Yacht rental</a>
+    <a class="yacht-rental-link link" href="#rent">Yacht rental</a>
   </button>
 </section>
 
     </div>
     <main>
-      <section class="container">
+      <section class="container" id="about">
   <div class="about-us-container">
     <div class="about-us-top-wrapper">
       <h2 class="about-us-title">
@@ -166,7 +167,7 @@
   </div>
 </section>
 
-      <section class="container">
+      <section class="container" id="yachts">
   <div class="page-yachts-title-style">
     <h2 class="page-yachts-title">
       Choose your dream yacht and sail away into the sunset
@@ -336,7 +337,7 @@
     </li>
   </ul>
   <button class="page-yachts-button" type="button">
-    <a class="yacht-rental-link link" href="">Yacht rental</a>
+    <a class="yacht-rental-link link" href="#rent">Yacht rental</a>
   </button>
 </section>
 
@@ -345,7 +346,7 @@
   <div class="container-adv">
     <div class="section-content">
       <div class="advantages-card">
-        <ul class="advantages-list">
+        <ol class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-item-header">01</h3>
             <p class="advantages-text">
@@ -370,7 +371,7 @@
               the outdoor atmosphere.
             </p>
           </li>
-        </ul>
+        </ol>
       </div>
       <div class="advantages-img-container">
         <picture>
@@ -405,14 +406,14 @@
   </div>
 </section>
 
-      <section class="container">
+      <section class="container" id="rent">
   <div class="rent-wrapper-desctop-container">
     <div class="rent-container">
       <div class="rent-title-form-img">
         <h2 class="rent-title">Rent a yacht now</h2>
       </div>
       <div class="rent-container-form">
-        <form class="rent-form" action="">
+        <form class="rent-form" id="rentForm" action="">
           <label class="rent-label" for="user-name"
             ><input
               class="rent-input"
@@ -420,6 +421,8 @@
               type="text"
               id="user-name"
               placeholder="Full Name"
+              pattern="[A-Za-z]{3,}"
+              required
           /></label>
           <label class="rent-label" for="user-email"
             ><input
@@ -428,6 +431,8 @@
               type="email"
               id="user-email"
               placeholder="Email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              required
           /></label>
           <label class="rent-label" for="user-tel"
             ><input
@@ -436,6 +441,8 @@
               type="tel"
               id="user-tel"
               placeholder="Phone number"
+              pattern="[0-9]{10}"
+              required
           /></label>
           <textarea
             class="rent-comment"
@@ -448,7 +455,9 @@
         </form>
       </div>
       <div class="rent-btn-container">
-        <button class="rent-form-btn" type="submit">Send</button>
+        <button class="rent-form-btn" type="submit" form="rentForm">
+          Send
+        </button>
       </div>
     </div>
     <div class="rent-wrapper-img">
@@ -475,7 +484,7 @@
   </div>
 </section>
 
-      <section class="container">
+      <section class="container" id="reviews">
   <h2 class="reviews-title">
     YachtJet take pride in providing the best possible service and experience to
     our customers
@@ -561,7 +570,7 @@
             target="_blank"
             rel="noopener noreferrer"
             ><svg class="footer-social-item-logo" width="24" height="24">
-              <use href="/project-group-8/assets/icons-15124274.svg#instagram"></use></svg
+              <use href="/project-group-8/assets/icons-812d13d6.svg#instagram"></use></svg
           ></a>
         </li>
         <li class="footer-social-item">
@@ -572,7 +581,7 @@
             rel="noopener noreferrer"
           >
             <svg class="footer-social-item-logo" width="24" height="24">
-              <use href="/project-group-8/assets/icons-15124274.svg#youtube"></use></svg
+              <use href="/project-group-8/assets/icons-812d13d6.svg#youtube"></use></svg
           ></a>
         </li>
         <li class="footer-social-item">
@@ -582,7 +591,7 @@
             target="_blank"
             rel="noopener noreferrer"
             ><svg class="footer-social-item-logo" width="24" height="24">
-              <use href="/project-group-8/assets/icons-15124274.svg#facebook"></use></svg
+              <use href="/project-group-8/assets/icons-812d13d6.svg#facebook"></use></svg
           ></a>
         </li>
       </ul>
@@ -600,64 +609,82 @@
   </div>
 </footer>
 
-    <!-- MOBILE MENU HTML-->
-
-<div class="menu-container" id="mobile-menu">
+    <div class="menu-container" id="mobile-menu">
   <div class="menu-header">
     <p class="menu-logo">yachtjet</p>
-    <button class="menu-button" type="button" onclick="closeMenu()">
+    <button class="menu-button" type="button">
       <svg class="menu-button-icon" width="16" height="16" viewBox="0 0 16 16">
-        <use href="/project-group-8/assets/icons-15124274.svg#close"></use>
+        <use href="/project-group-8/assets/icons-812d13d6.svg#close"></use>
       </svg>
     </button>
   </div>
   <div class="menu-nav">
     <ul class="menu-nav-list">
-      <li class="menu-nav-list-item menu-about"><a href="#about">about</a></li>
-      <li class="menu-nav-list-item"><a href="#yachts">yachts</a></li>
-      <li class="menu-nav-list-item"><a href="#reviews">reviews</a></li>
+      <li class="menu-nav-list-item menu-about">
+        <a id="menu-about" href="#about">about</a>
+      </li>
+      <li class="menu-nav-list-item">
+        <a id="menu-yachts" href="#yachts">yachts</a>
+      </li>
+      <li class="menu-nav-list-item">
+        <a id="menu-reviews" href="#reviews">reviews</a>
+      </li>
     </ul>
   </div>
   <div class="menu-social">
     <ul class="menu-social-list">
       <li class="menu-social-list-item">
-        <a href="https://www.instagram.com/goitclub/" class="menu-social-link"
+        <a
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          class="menu-social-link"
           ><svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
             class="menu-social-icon"
           >
-            <use href="/project-group-8/assets/icons-15124274.svg#instagram"></use></svg
+            <use href="/project-group-8/assets/icons-812d13d6.svg#instagram"></use></svg
         ></a>
       </li>
 
       <li class="menu-social-list-item">
-        <a href="https://www.youtube.com/c/GoIT" class="menu-social-link"
+        <a
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          class="menu-social-link"
           ><svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
             class="menu-social-icon"
           >
-            <use href="/project-group-8/assets/icons-15124274.svg#youtube"></use></svg
+            <use href="/project-group-8/assets/icons-812d13d6.svg#youtube"></use></svg
         ></a>
       </li>
       <li class="menu-social-list-item">
-        <a href="https://www.facebook.com/goITclub/" class="menu-social-link"
+        <a
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          class="menu-social-link"
           ><svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
             class="menu-social-icon"
           >
-            <use href="/project-group-8/assets/icons-15124274.svg#facebook"></use></svg
+            <use href="/project-group-8/assets/icons-812d13d6.svg#facebook"></use></svg
         ></a>
       </li>
     </ul>
   </div>
 </div>
 
+    <a href="#" class="stt" title="scroll to top">
+      <svg class="stt-icon" width="3rem" height="3rem">
+        <use href="/project-group-8/assets/icons-812d13d6.svg#stt"></use>
+      </svg>
+    </a>
     
   </body>
 </html>
