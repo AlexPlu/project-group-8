@@ -29,6 +29,10 @@ p:last-child {
   margin-bottom: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   scroll-behavior: smooth;

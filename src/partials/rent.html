@@ -1,11 +1,11 @@
-<section class="container">
+<section class="container" id="rent">
   <div class="rent-wrapper-desctop-container">
     <div class="rent-container">
       <div class="rent-title-form-img">
         <h2 class="rent-title">Rent a yacht now</h2>
       </div>
       <div class="rent-container-form">
-        <form class="rent-form" action="">
+        <form class="rent-form" id="rentForm" action="">
           <label class="rent-label" for="user-name"
             ><input
               class="rent-input"
@@ -13,6 +13,8 @@
               type="text"
               id="user-name"
               placeholder="Full Name"
+              pattern="[A-Za-z]{3,}"
+              required
           /></label>
           <label class="rent-label" for="user-email"
             ><input
@@ -21,6 +23,8 @@
               type="email"
               id="user-email"
               placeholder="Email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              required
           /></label>
           <label class="rent-label" for="user-tel"
             ><input
@@ -29,6 +33,8 @@
               type="tel"
               id="user-tel"
               placeholder="Phone number"
+              pattern="[0-9]{10}"
+              required
           /></label>
           <textarea
             class="rent-comment"
@@ -41,7 +47,9 @@
         </form>
       </div>
       <div class="rent-btn-container">
-        <button class="rent-form-btn" type="submit">Send</button>
+        <button class="rent-form-btn" type="submit" form="rentForm">
+          Send
+        </button>
       </div>
     </div>
     <div class="rent-wrapper-img">
