@@ -29,7 +29,7 @@
   line-height: 1;
   letter-spacing: -0.02em;
 }
-.about-us-list-paragraf {
+.about-us-list-paragraph {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -43,7 +43,7 @@
   line-height: 1;
   letter-spacing: -0.02em;
 }
-.about-us-paragraf {
+.about-us-paragraph {
   color: #040306;
   font-family: Inter;
   font-size: 12px;
@@ -88,7 +88,7 @@
     line-height: 1;
     letter-spacing: -0.02em;
   }
-  .about-us-list-paragraf {
+  .about-us-list-paragraph {
     display: flex;
     width: 389px;
     flex-direction: column;
@@ -100,7 +100,7 @@
     width: 389px;
     height: 92px;
   }
-  .about-us-paragraf {
+  .about-us-paragraph {
     width: 385px;
     height: 75px;
     font-size: 13px;
@@ -130,7 +130,7 @@
     width: 537px;
     height: 144px;
   }
-  .about-us-list-paragraf {
+  .about-us-list-paragraph {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -140,7 +140,7 @@
     width: 354px;
     height: 115px;
   }
-  .about-us-paragraf {
+  .about-us-paragraph {
     width: 354px;
     height: 75px;
   }
