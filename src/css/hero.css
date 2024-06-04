@@ -107,9 +107,13 @@
 }
 
 .button-style:hover,
-.button-style:focus {
-  background-color: #fbfbfb;
-  color: #1b414b;
+.button-style:focus,
+.button-style.hovered {
+  /* Added .button-style.hovered */
+  background-color: #fbfbfb !important;
+  /* Added !important */
+  color: #1b414b !important;
+  /* Added !important */
 }
 
 @media screen and (min-width: 768px) {

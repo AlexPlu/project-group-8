@@ -83,7 +83,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     startTyping();
     repeatTyping();
-})
+});
 
+// Function to simulate hover effect on the button
+function simulateHover() {
+    var button = document.querySelector('.button-style');
+    button.classList.add('hovered');
 
+    // Remove the hover effect after 5 seconds
+    setTimeout(function() {
+      button.classList.remove('hovered');
+    }, 5000);
+}
 
+// Initial call to start the effect
+setTimeout(simulateHover, 15000); // Trigger after 15 seconds
+
+// Set interval to repeat the effect every 20 seconds (15 seconds + 5 seconds)
+setInterval(function() {
+  simulateHover();
+}, 20000);
