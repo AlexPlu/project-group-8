@@ -13,6 +13,21 @@
   background-size: cover;
   height: 812px;
   z-index: 1;
+  animation: pulsateAnimation 5s ease-in-out infinite alternate;
+}
+
+@keyframes pulsateAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -92,9 +107,13 @@
 }
 
 .button-style:hover,
-.button-style:focus {
-  background-color: #fbfbfb;
-  color: #1b414b;
+.button-style:focus,
+.button-style.hovered {
+  /* Added .button-style.hovered */
+  background-color: #fbfbfb !important;
+  /* Added !important */
+  color: #1b414b !important;
+  /* Added !important */
 }
 
 @media screen and (min-width: 768px) {
