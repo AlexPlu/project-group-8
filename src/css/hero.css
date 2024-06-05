@@ -76,23 +76,24 @@
 
 .button-style {
   margin-top: 40px;
-  display: block;
-  min-width: 141px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  color: #fbfbfb;
-  background-color: transparent;
-  background: #1b414b;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 14px 32px;
-  border-radius: 15px;
-  border: 1px solid rgba(251, 251, 251, 0.35);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  animation: pulse 10s infinite;
+    display: block;
+    min-width: 141px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    background-color: transparent;
+    background: #1b414b;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 32px;
+    border-radius: 15px;
+    border: 1px solid rgba(251, 251, 251, 0.35);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    animation: pulse 10s infinite;
+}
 
 @keyframes pulse {
   0% {
@@ -101,7 +102,7 @@
 
   50% {
     transform: scale(1.1);
-
+  }
 
   100% {
     transform: scale(1);
@@ -152,7 +153,6 @@
     line-height: 1;
     letter-spacing: -1.4px;
     height: 3.5em;
-
   }
 
   .hero-description {
@@ -197,3 +197,4 @@
     font-weight: 300;
     line-height: 140%;
   }
+}
