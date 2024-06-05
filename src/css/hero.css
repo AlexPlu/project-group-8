@@ -59,8 +59,7 @@
   font-weight: 500;
   line-height: 32px;
   letter-spacing: -0.64px;
-  height: 2.75em;
-  /* Reserve space for two rows */
+  height: 6.5em;
 }
 
 .hero-description {
@@ -76,29 +75,24 @@
 }
 
 .button-style {
-  display: block;
-  padding: 14px 32px;
-  align-items: center;
-  color: #fbfbfb;
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: -0.28px;
-  background: #1b414b;
-  cursor: pointer;
-  padding: 14px 32px 14px 32px;
-  gap: 10px;
-  min-width: 169px;
-  height: 56px;
-  text-align: center;
-  border: none;
-  background-color: #1b414b;
-  border-radius: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  animation: pulse 10s infinite;
+  margin-top: 40px;
+    display: block;
+    min-width: 141px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    background-color: transparent;
+    background: #1b414b;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 32px;
+    border-radius: 15px;
+    border: 1px solid rgba(251, 251, 251, 0.35);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    animation: pulse 10s infinite;
 }
 
 @keyframes pulse {
@@ -107,7 +101,7 @@
   }
 
   50% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   100% {
@@ -158,7 +152,7 @@
     font-weight: 500;
     line-height: 1;
     letter-spacing: -1.4px;
-    height: 2.5em;
+    height: 3.5em;
   }
 
   .hero-description {
@@ -170,11 +164,11 @@
   }
 
   .button-style {
-    padding: 16px 40px;
+    margin-top: 50px;
+    min-width: 179px;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -0.36px;
+    line-height: 1.1;
+    padding: 16px 40px;
   }
 }
 
@@ -194,7 +188,7 @@
     font-weight: 500;
     line-height: 80px;
     letter-spacing: -1.6px;
-    height: 2 em;
+    height: 2.5em;
   }
 
   .hero-description {
@@ -202,13 +196,5 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 140%;
-  }
-
-  .button-style {
-    padding: 16px 40px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 19.8px;
-    letter-spacing: 0.04em;
   }
 }
