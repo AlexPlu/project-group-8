@@ -1,45 +1,37 @@
 /*================ Mobile =============== */
 .header-hero-wrapper {
   background-color: #0e1823;
-  background: linear-gradient(
-      359deg,
+  background: linear-gradient(359deg,
       rgba(14, 24, 35, 0.1) 80%,
       rgba(14, 24, 35, 0.3) 10%,
-      rgba(14, 24, 35, 1) 100%
-    ),
+      rgba(14, 24, 35, 1) 100%),
     url(../img/hero/image-1-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 812px;
   z-index: 1;
-  animation: pulsateAnimation 5s ease-in-out infinite alternate;
+  animation: animateBackground 7s linear infinite alternate;
 }
 
-@keyframes pulsateAnimation {
-  0% {
-    transform: scale(1);
+@keyframes animateBackground {
+  from {
+    filter: brightness(100%);
   }
 
-  50% {
-    transform: scale(1.05);
-  }
-
-  100% {
-    transform: scale(1);
+  to {
+    filter: brightness(150%);
   }
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .header-hero-wrapper {
-    background: linear-gradient(
-        to bottom,
+    background: linear-gradient(to bottom,
         rgba(14, 24, 35, 0.1) 80%,
         rgba(14, 24, 35, 0.3) 10%,
-        rgba(14, 24, 35, 1) 100%
-      ),
+        rgba(14, 24, 35, 1) 100%),
       url(../img/hero/image-1-mob2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -67,6 +59,8 @@
   font-weight: 500;
   line-height: 32px;
   letter-spacing: -0.64px;
+  height: 2.75em;
+  /* Reserve space for two rows */
 }
 
 .hero-description {
@@ -104,6 +98,21 @@
   margin-left: auto;
   margin-right: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation: pulse 10s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .button-style:hover,
@@ -112,30 +121,28 @@
   /* Added .button-style.hovered */
   background-color: #fbfbfb !important;
   /* Added !important */
-  color: #1b414b !important;
+  color: black !important;
   /* Added !important */
+
 }
 
 @media screen and (min-width: 768px) {
   .header-hero-wrapper {
-    background-image: linear-gradient(
-        359deg,
+    background-image: linear-gradient(359deg,
         rgba(17, 19, 31, 0.31) 84.12%,
-        rgba(17, 19, 31, 0) 99.94%
-      ),
+        rgba(17, 19, 31, 0) 99.94%),
       url(/img/hero/image-1-tab.jpg);
     height: 962px;
+    line-height: 22px;
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .header-hero-wrapper {
-      background-image: linear-gradient(
-          359deg,
+      background-image: linear-gradient(359deg,
           rgba(17, 19, 31, 0.31) 84.12%,
-          rgba(17, 19, 31, 0) 99.94%
-        ),
+          rgba(17, 19, 31, 0) 99.94%),
         url(/img/hero/image-1-tab2x.jpg);
     }
   }
@@ -151,6 +158,7 @@
     font-weight: 500;
     line-height: 1;
     letter-spacing: -1.4px;
+    height: 2.5em;
   }
 
   .hero-description {
@@ -172,11 +180,9 @@
 
 @media (min-width: 1280px) {
   .header-hero-wrapper {
-    background-image: linear-gradient(
-        359deg,
+    background-image: linear-gradient(359deg,
         rgba(17, 19, 31, 0.31) 84.12%,
-        rgba(17, 19, 31, 0) 99.94%
-      ),
+        rgba(17, 19, 31, 0) 99.94%),
       url(/img/hero/image-1-desc.jpg);
     height: 800px;
   }
@@ -188,6 +194,7 @@
     font-weight: 500;
     line-height: 80px;
     letter-spacing: -1.6px;
+    height: 2 em;
   }
 
   .hero-description {

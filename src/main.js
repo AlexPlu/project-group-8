@@ -53,43 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var title = document.getElementById("title");
-    var text = title.textContent.trim();
-    title.textContent = ""; // Clear the original text
-    // Create a span element to contain the typed text
-    var typedText = document.createElement("span");
-    title.appendChild(typedText);
-    // Function to add a character to the typed text
-    function addCharacter(index) {
-        if (index < text.length) {
-            typedText.textContent += text.charAt(index);
-            setTimeout(function() {
-                addCharacter(index + 1); // Move to the next character
-            }, 55); // Adjust typing speed here (in milliseconds)
-        }
-    }
-    // Function to start the typing animation
-    function startTyping() {
-        // Clear existing typed text
-        typedText.textContent = "";
-        // Start typing animation
-        addCharacter(0);
-    }
-    // Function to restart typing animation every 30 seconds
-    function repeatTyping() {
-        // Start repeating the typing animation every 30 seconds
-        setInterval(startTyping, 30000); // 30 seconds = 30000 milliseconds
-    }
-    startTyping();
-    repeatTyping();
-});
-
 // Function to simulate hover effect on the button
 function simulateHover() {
     var button = document.querySelector('.button-style');
     button.classList.add('hovered');
-
     // Remove the hover effect after 5 seconds
     setTimeout(function() {
       button.classList.remove('hovered');
@@ -97,9 +64,34 @@ function simulateHover() {
 }
 
 // Initial call to start the effect
-setTimeout(simulateHover, 15000); // Trigger after 15 seconds
+setTimeout(simulateHover, 8000); // Trigger after 8 seconds
 
-// Set interval to repeat the effect every 20 seconds (15 seconds + 5 seconds)
+// Set interval to repeat the effect every 13 seconds (8 seconds + 5 seconds)
 setInterval(function() {
   simulateHover();
-}, 20000);
+}, 13000);
+
+// Function to apply typing effect to hero-title
+const title = document.getElementById('title');
+const text = "Explore the High Seas with Our Luxury Yacht Rentals"; // Text to be typed out
+let index = 0;
+
+function typeText() {
+  title.style.visibility = 'visible'; // Make the hero-title visible before typing
+  title.innerHTML = text.slice(0, index);
+
+  index++;
+
+  if (index > text.length) {
+    index = 0;
+    setTimeout(typeText, 10000); // 10 seconds before repeating the typing animation
+  } else {
+    setTimeout(typeText, 100); // Typing speed
+  }
+}
+
+// Adjusting the timing of the typing animation for tablets and mobile devices
+const isMobileOrTablet = window.innerWidth < 768; // Assuming tablets and mobile have width less than 768px
+const typingSpeed = isMobileOrTablet ? 150 : 100; // Typing speed for tablets and mobile is slower
+
+typeText(typingSpeed);
