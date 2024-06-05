@@ -59,8 +59,7 @@
   font-weight: 500;
   line-height: 32px;
   letter-spacing: -0.64px;
-  height: 6em;
-  /* Reserve space for 6 rows */
+  height: 6.5em;
 }
 
 .hero-description {
